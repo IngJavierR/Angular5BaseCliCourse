@@ -1,0 +1,20 @@
+.card{
+    border: 1px solid black;
+    max-width: 350px;
+}
+.horizontal-container{
+    display: flex;
+    flex-direction: row;
+}
+.data-container{
+    margin: 10px;
+}
+.label-color{
+    color: black;
+}
+span{
+    color: cadetblue;
+}
+.container-space{
+    justify-content: space-between;
+}

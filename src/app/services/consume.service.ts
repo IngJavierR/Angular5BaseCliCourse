@@ -10,7 +10,7 @@ export class ConsumeService {
 
   getCities() {
     return this._http
-        .get(this._url, {responseType: 'json'})
+        .get(this._url, {responseType: 'json'})        
         .catch(this.handleError);
   }
 

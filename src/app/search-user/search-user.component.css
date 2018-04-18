@@ -1,0 +1,7 @@
+.horizontal-container{
+    display: flex;
+    flex-flow: row;
+}
+input{
+    width: 200px;
+}

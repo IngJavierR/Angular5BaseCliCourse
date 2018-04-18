@@ -5,6 +5,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import { MatToolbarModule,
         MatSidenavModule,
         MatButtonModule,
@@ -17,6 +18,8 @@ import { APP_PROVIDERS } from './app.providers';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { GitHubCardComponent } from './git-hub-card/git-hub-card.component';
+import { SearchUserComponent } from './search-user/search-user.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -33,7 +36,9 @@ export const MATERIAL_COMPONENTS = [
     AppComponent,
     MainComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    GitHubCardComponent,
+    SearchUserComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ export const MATERIAL_COMPONENTS = [
     HttpClientModule,
     BrowserAnimationsModule,
     MATERIAL_COMPONENTS,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [APP_PROVIDERS],
